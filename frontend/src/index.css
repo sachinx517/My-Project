@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-slideUp {
+    animation: slideUp 0.3s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+/* global.css */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+body {
+  background: #000000;
+  color: white;
+}
+body.dark-mode {
+  background: #000000;
+  color: white;
+}
+body.dark-mode .questionDetails {
+  background: #343434;
+}
+body.dark-mode .leftNav {
+  background: #1c1c1c;
+}
+body.dark-mode .testCases {
+  background: #222222;
+}
+body.dark-mode .aceEditor {
+  background: #0a122dc8;
+  color: white;
+}
+body.dark-mode .editorSide select {
+  background: #000000;
+  color: white; 
+}
+body.dark-mode .mainNav {
+  background: #000000;
+  color: #e0e0e0;
+}
+body.dark-mode .dashCard {
+  background: #2a2a2a;
+  /* color: #e0e0e0; */
+}
+body.dark-mode .dash{
+  background: #2a2a2a;
+  /* color: #e0e0e0; */
+}
+body.dark-mode .dashA :nth-child(even) {
+  background: #e1e1e1;
+  /* color: #e0e0e0; */
+}
+body.dark-mode .qlist{
+  background: #121212;
+  color: aliceblue;
+}
+body.dark-mode .navFilter{
+  color: white;
+  background: #343434;
+}
+body.dark-mode .tgray {
+  color: rgb(218, 215, 215);
+  /* background: #343434; */
+}
+body.dark-mode .questions  {
+  background: #343434;
+  color: #e0e0e0;
+}
+body.dark-mode .navFilter button {
+  background: #e1e1e1;
+}
+body.dark-mode .colorText {
+  /* background: #e1e1e1; */
+  color: rgb(0, 195, 255);
+}
+body.dark-mode .login {
+  background: #121212;
+  
+}
+body.dark-mode .inlogin {
+  background: #232323;
+  color: white;
+}
+body.dark-mode .dash-sec {
+  background: #232323;
+  color: white;
+}
+
